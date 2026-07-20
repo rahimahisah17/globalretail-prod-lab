@@ -32,3 +32,50 @@ Unlike a guided lab with perfect conditions, this project involved troubleshooti
 - Windows 11 VM (Availability Zone)
 - Nginx
 - IIS
+
+---
+
+## Azure Infrastructure
+
+| Resource | Name |
+|----------|------|
+| Resource Group | rg-globalretail-prod-001 |
+| Region | West Europe |
+| Linux VM | vm-linux-web-01 |
+| Windows Server VM | vm-win-admin01 |
+| Windows 11 VM | vm-win11-ha |
+| Virtual Network | vm-linux-web-01VNET |
+| Subnet | vm-linux-web-01Subnet |
+
+---
+
+## Technologies Used
+
+- Microsoft Azure
+- Azure CLI
+- Ubuntu Server 22.04 LTS
+- Windows Server 2022
+- Windows 11 Pro
+- Azure Virtual Network (VNet)
+- Network Security Groups (NSGs)
+- Availability Zones
+- Nginx
+- IIS
+- SSH
+- Remote Desktop Protocol (RDP)
+
+---
+
+## Deployment Summary
+
+The environment was provisioned entirely using Azure CLI. The deployment included:
+
+- Creating a Resource Group
+- Deploying an Ubuntu Linux VM
+- Deploying a Windows Server VM
+- Deploying a highly available Windows 11 VM in an Availability Zone
+- Connecting all virtual machines to the same Virtual Network
+- Installing Nginx on Linux
+- Installing IIS on Windows Server
+- Configuring NSG rules for HTTP traffic
+- Verifying public access to both web servers
