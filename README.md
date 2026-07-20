@@ -253,3 +253,48 @@ This reflects cloud cost management best practices.
 # Conclusion
 
 This project demonstrates the end-to-end deployment of a production-style Azure environment using Azure CLI. In addition to provisioning Linux and Windows virtual machines, the implementation included web server configuration, network security, high availability concepts, connectivity validation, and troubleshooting of real Azure platform limitations. The experience strengthened practical Azure administration skills while reinforcing operational excellence and cost-conscious resource management.
+
+---
+
+# Repository Structure
+
+```
+globalretail-prod-lab/
+├── README.md
+├── docs/
+└── screenshots/
+```
+
+---
+
+# Skills Demonstrated
+
+- Microsoft Azure
+- Azure CLI
+- Infrastructure as Code (CLI-based)
+- Virtual Machines
+- Linux Administration
+- Windows Server Administration
+- Windows 11 Administration
+- Azure Networking
+- Virtual Networks (VNets)
+- Subnets
+- Network Security Groups
+- Availability Zones
+- SSH
+- Remote Desktop Protocol (RDP)
+- Nginx
+- IIS
+- Infrastructure Troubleshooting
+- Cloud Cost Management
+
+---
+
+# Author
+
+**Rahimah Sulayman**
+
+Cloud Engineer | Azure | Kubernetes | DevOps
+
+GitHub: https://github.com/rahimahisah17
+LinkedIn: https://www.linkedin.com/in/rahimah-sulayman
