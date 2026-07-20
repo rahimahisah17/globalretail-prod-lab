@@ -116,3 +116,140 @@ This project presented several real-world Azure deployment challenges. Each issu
 - Azure Troubleshooting
 - Cloud Networking
 - Infrastructure Documentation
+
+---
+
+# Deployment Walkthrough
+
+## 1. Created the Resource Group
+
+The deployment began by creating a dedicated Azure Resource Group to contain all resources for the project.
+
+**Screenshot**
+
+![Resource Group](screenshots/07-resource-group.png)
+
+---
+
+## 2. Provisioned the Ubuntu Linux Virtual Machine
+
+A Linux virtual machine running Ubuntu Server 22.04 LTS was deployed using Azure CLI.
+
+**Screenshot**
+
+![Linux VM](screenshots/08-linux-vm-created.png)
+
+---
+
+## 3. Provisioned the Windows Server Virtual Machine
+
+A Windows Server virtual machine was created to host IIS.
+
+**Screenshot**
+
+![Windows Server VM](screenshots/09-windows-server-vm.png)
+
+---
+
+## 4. Provisioned a Highly Available Windows 11 VM
+
+A Windows 11 Pro virtual machine was deployed into an Availability Zone while sharing the existing Virtual Network.
+
+**Screenshot**
+
+![Windows 11 VM](screenshots/10-windows11-ha.png)
+
+---
+
+## 5. Installed Nginx on Ubuntu
+
+After connecting to the Linux VM using SSH, Nginx was installed and verified.
+
+**Screenshot**
+
+![Nginx Installed](screenshots/11-nginx-installed.png)
+
+---
+
+## 6. Installed IIS on Windows Server
+
+Using Remote Desktop and PowerShell, IIS was installed successfully.
+
+**Screenshot**
+
+![IIS Installed](screenshots/12-iis-installed.png)
+
+---
+
+## 7. Configured Network Security Groups
+
+Inbound HTTP (TCP/80) rules were added to allow public access to the web servers.
+
+**Screenshot**
+
+![NSG Rules](screenshots/13-nsg-http-rule.png)
+
+---
+
+## 8. Verified Public Connectivity
+
+Both Nginx and IIS were successfully accessed through their public IP addresses using a web browser.
+
+**Screenshot**
+
+![Browser Verification](screenshots/14-browser-test.png)
+
+---
+
+# Validation
+
+After deployment, the infrastructure was validated to confirm that all components were functioning correctly.
+
+## Validation Performed
+
+- Successfully connected to the Ubuntu VM using SSH.
+- Installed and verified the Nginx service.
+- Successfully connected to the Windows Server VM using Remote Desktop.
+- Installed IIS using PowerShell.
+- Configured Network Security Groups to allow inbound HTTP traffic (TCP/80).
+- Verified that both the Linux and Windows web servers were publicly accessible through their respective public IP addresses.
+
+---
+
+# Lessons Learned
+
+This project provided practical experience beyond simply provisioning Azure resources. It reinforced the importance of understanding Azure regional capacity, subscription quotas, virtual networking, authentication methods, and systematic troubleshooting.
+
+Key takeaways include:
+
+- Azure regions may not always have capacity for every VM SKU.
+- VM family quotas can prevent deployments even when a subscription is active.
+- Azure CLI error messages may hide the underlying issue, requiring careful investigation.
+- SSH key management is essential when administering Linux virtual machines.
+- Windows virtual machines have naming constraints that must be considered during deployment.
+- Proper Network Security Group configuration is required before workloads become publicly accessible.
+- Cleaning up Azure resources promptly helps prevent unnecessary costs.
+
+---
+
+# Cleanup
+
+After validating the environment, all Azure resources were deleted to avoid ongoing charges.
+
+Resources removed included:
+
+- Resource Group
+- Virtual Machines
+- Virtual Network
+- Network Security Groups
+- Public IP Addresses
+- Network Interfaces
+- Managed Disks
+
+This reflects cloud cost management best practices.
+
+---
+
+# Conclusion
+
+This project demonstrates the end-to-end deployment of a production-style Azure environment using Azure CLI. In addition to provisioning Linux and Windows virtual machines, the implementation included web server configuration, network security, high availability concepts, connectivity validation, and troubleshooting of real Azure platform limitations. The experience strengthened practical Azure administration skills while reinforcing operational excellence and cost-conscious resource management.
