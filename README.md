@@ -1,10 +1,21 @@
 # Global Retail Production Infrastructure Lab
+![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Microsoft%20Azure-0078D4)
+![Status](https://img.shields.io/badge/status-Completed-success)
 
 ## Project Overview
 
 This project demonstrates the deployment of a production-style Azure infrastructure using Azure CLI. The environment consists of Linux and Windows virtual machines deployed within the same virtual network, configured as web servers, secured with Network Security Groups (NSGs), and validated through end-to-end connectivity testing.
 
 Unlike a guided lab with perfect conditions, this project involved troubleshooting real Azure platform limitations including regional VM capacity constraints, subscription quotas, SSH authentication issues, and networking configuration challenges.
+
+---
+
+# Architecture Diagram
+
+> High-level architecture of the Azure environment deployed for this project.
+
+![Architecture Diagram](screenshots/architecture-diagram.png)
 
 ---
 
