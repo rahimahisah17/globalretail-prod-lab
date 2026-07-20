@@ -1,0 +1,15 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# SSH Keys
+*.pem
+id_rsa
+id_rsa.pub
+
+# OS files
+.DS_Store
+Thumbs.db
