@@ -14,14 +14,6 @@ The completed environment demonstrates secure infrastructure provisioning, opera
 
 ---
 
-# Architecture Diagram
-
-> High-level architecture of the deployed Azure environment.
-
-![Architecture Diagram](screenshots/architecture-diagram.png)
-
----
-
 ## Objectives
 
 - Provision Azure infrastructure using the Azure CLI.
@@ -341,7 +333,7 @@ A dedicated Azure Resource Group was created to logically organize all infrastru
 
 ### Resource Group Created
 
-![Resource Group Created](screenshots/07-resource-group.png)
+![Resource Group Created](screenshots/07-resource-group-created.png)
 
 ---
 
@@ -433,15 +425,15 @@ After connecting to the VM:
 
 ### Update Package Repository
 
-![Package Update - Start](screenshots/20a-update-package-repository-start.png)
+![Package Update - Start](screenshots/20a-update-package-repository.png)
 
-![Package Update - Complete](screenshots/20b-update-package-repository-complete.png)
+![Package Update - Complete](screenshots/20b-update-package-repository.png)
 
 ### Install Nginx
 
-![Install Nginx - Start](screenshots/21a-install-nginx-start.png)
+![Install Nginx - Start](screenshots/21a-install-nginx.png)
 
-![Install Nginx - Complete](screenshots/21b-install-nginx-complete.png)
+![Install Nginx - Complete](screenshots/21b-install-nginx.png)
 
 ### Verify Nginx Service
 
@@ -500,7 +492,7 @@ After validation was completed, the Resource Group was deleted to prevent unnece
 
 ### Delete Resource Group
 
-![Delete Resource Group](screenshots/30-delete-resource-group.png)
+![Delete Resource Group](30-delete-resource-group.png)
 
 # Validation
 
