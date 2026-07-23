@@ -359,7 +359,7 @@ After renaming the VM, Azure CLI returned a temporary `ResourceNotFound` message
 
 ### Windows VM Name Constraint
 
-![Windows VM Name Constraint](screenshots/09-windows-vm-name-constraint.png)
+![Windows VM Name Constraint](screenshots/09-windows-vm-name-error.png)
 
 ### Resource Verified After Deployment
 
