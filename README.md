@@ -492,7 +492,9 @@ After validation was completed, the Resource Group was deleted to prevent unnece
 
 ### Delete Resource Group
 
-![Delete Resource Group](30-delete-resource-group.png)
+![Delete Resource Group](screenshots/30-delete-resource-group.png)
+
+---
 
 # Validation
 
